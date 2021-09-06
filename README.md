@@ -6,11 +6,11 @@ Il progetto è stato realizzato con il framework Angular.
 
 ### Struttura del progetto
 - **Servizi**:
- - PostwebService: servizio di interfaccia al servizio online. Si compone di soli tre metodi: uno per la lettura della stringa JSON contenente la collezione dei post-it, uno per l'aggiornamento dei post-it e uno per ottenere una nuova chiave dal servizio online.
+  - PostwebService: servizio di interfaccia al servizio online. Si compone di soli tre metodi: uno per la lettura della stringa JSON contenente la collezione dei post-it, uno per l'aggiornamento dei post-it e uno per ottenere una nuova chiave dal servizio online.
 - **Componenti**:
- - app: è il componente di "root". Qui risiedono le chiamate ai metodi del service di interfaccia al database e alcune manipolazioni minori
- - postit-creator: componente di creazione dei post-it
- - postit-viewer: componente di visualizzazione dei post-it
+  - app: è il componente di "root". Qui risiedono le chiamate ai metodi di Postwebservice e alcune manipolazioni minori
+  - postit-creator: componente di creazione dei post-it
+  - postit-viewer: componente di visualizzazione dei post-it
 
 ### Note
 - Sono state implementati la possibilità di **richiedere una chiave** al servizio online e quella di marcare i post-it come **importanti**
