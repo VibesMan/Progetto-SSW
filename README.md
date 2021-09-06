@@ -1,7 +1,7 @@
 ## Progetto SSW
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-3tlnrt)
 
-Progetto di Francesco Bertoli - Mat. 590178
+Progetto di Francesco Bertoli - Mat. 590178  
 Il progetto è stato realizzato con il framework Angular.
 
 ### Struttura del progetto
