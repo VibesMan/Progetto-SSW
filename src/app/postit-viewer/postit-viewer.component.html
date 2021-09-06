@@ -1,0 +1,12 @@
+<section id='postit-viewer' *ngIf='allPostit !== undefined && isObject(allPostit[0])'>
+  <label>Visualizza solo i post-it importanti:
+  <input type="checkbox" (click)='toggleBoolean()' [checked]="importantToggle"/></label>
+
+  <div id="post-it-container" *ngFor='let postit of allPostit'>
+    <div class='post-it' *ngIf="(postit.important && importantToggle !== undefined) || (importantToggle === undefined)">
+      <button class='delete' (click)='deletePostit(postit.timestamp)'>❌</button>
+      <h2 class='title' (click)='cnt.classList.toggle("content")'>{{postit.title}}</h2>
+      <p #cnt class='content'>{{postit.content}}</p>
+    </div>
+  </div>
+</section>

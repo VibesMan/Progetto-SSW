@@ -1,0 +1,11 @@
+<section id='login'>
+  <p>Inserire la propria chiave di accesso:</p>
+  <input #userKey (keyup.enter)="retrievePostits(userKey.value)" value="{{apiKey}}" />
+  <button (click)='retrievePostits(userKey.value)'>Vai</button>
+  <button (click)='createKey()'>Non ho una chiave</button>
+</section>
+<br><br>
+
+<app-postit-creator *ngIf='apiKey !== undefined' (createPostitEvent)='createPostit($event)'></app-postit-creator>
+<br><br>
+<app-postit-viewer [allPostit]='postIts' (deletePostitEvent)='deletePostit($event)'></app-postit-viewer>

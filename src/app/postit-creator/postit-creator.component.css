@@ -1,0 +1,13 @@
+#postit-creator {
+  position: relative;
+  background-color: rgb(231, 204, 147);
+  width: 50%;
+}
+
+#postit-creator button {
+  width: 100%;
+}
+
+label textarea {
+  vertical-align: middle;
+}

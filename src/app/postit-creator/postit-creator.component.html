@@ -1,0 +1,10 @@
+<section id="postit-creator">
+  <p>Crea un nuovo post-it:</p>
+
+  <label>Titolo: <input #title></label><br><br>
+  <label for='textarea'>Contenuto: 
+    <textarea #content id='textarea'></textarea></label><br><br>
+  <label>Importante:<input #importantFlag type="checkbox" /></label><br><br>
+  <button (click)='createPostit(title.value, content.value, importantFlag.checked)'>Salva post-it</button>
+  <br>
+</section>

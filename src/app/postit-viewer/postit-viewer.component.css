@@ -1,0 +1,34 @@
+.content {
+  display: none;
+}
+
+.post-it-container {
+  display: inline-grid;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete {
+  background: #d4ba34;
+  border: 1px solid #d4ba34;
+}
+
+.post-it {
+  position: relative;
+  width: 30%;
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  background: #ffe03f;
+}
+
+.post-it:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #d4ba34 #fff;
+}
