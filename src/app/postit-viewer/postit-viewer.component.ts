@@ -19,7 +19,6 @@ export class PostitViewerComponent implements OnInit {
   toggleBoolean() {
     this.importantToggle =
       this.importantToggle === undefined ? true : undefined;
-    console.log(this.importantToggle);
   }
 
   isObject(input: any): boolean {
